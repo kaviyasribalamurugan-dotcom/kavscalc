@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>💗kavsCalc - Advanced Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div>
+          <h1>💗kavsCalc</h1>
+          <p>Advanced Calculator</p>
+        </div>
+
+        <button id="themeBtn" class="theme-btn">🌙</button>
+      </header>
+
+      <main class="calculator">
+        <!-- Display -->
+        <section class="display">
+          <div id="expression" class="expression">0</div>
+
+          <div id="result" class="result">0</div>
+        </section>
+
+        <!-- History -->
+        <section class="history-panel">
+          <div class="history-header">
+            <span>History</span>
+
+            <button id="clearHistory">Clear</button>
+          </div>
+
+          <div id="historyList">
+            <p class="empty-history">No calculations yet</p>
+          </div>
+        </section>
+
+        <!-- Calculator Buttons -->
+        <section class="buttons">
+          <!-- Scientific -->
+
+          <button class="scientific" data-action="sin">sin</button>
+
+          <button class="scientific" data-action="cos">cos</button>
+
+          <button class="scientific" data-action="tan">tan</button>
+
+          <button class="scientific" data-action="sqrt">√</button>
+
+          <button class="scientific" data-action="log">log</button>
+
+          <button class="scientific" data-action="ln">ln</button>
+
+          <button class="scientific" data-action="square">x²</button>
+
+          <button class="scientific" data-action="percent">%</button>
+
+          <!-- Controls -->
+
+          <button class="clear" data-action="clear">AC</button>
+
+          <button class="delete" data-action="delete">DEL</button>
+
+          <button class="operator" data-value="(">(</button>
+
+          <button class="operator" data-value=")">)</button>
+
+          <!-- Numbers -->
+
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+
+          <button class="operator" data-value="/">÷</button>
+
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+
+          <button class="operator" data-value="*">×</button>
+
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+
+          <button class="operator" data-value="-">−</button>
+
+          <button class="zero" data-value="0">0</button>
+
+          <button data-value=".">.</button>
+
+          <button class="operator" data-value="+">+</button>
+
+          <!-- Equal -->
+
+          <button id="equals" class="equals">=</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
